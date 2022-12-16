@@ -264,7 +264,11 @@ a.text-dark:hover, a.text-dark:focus {
 /* Buttons */
 .btn-primary {
   color: #fff;
+<<<<<<< HEAD
   background-color: #00D9A5;
+=======
+  background-color: #00D9A5!important;
+>>>>>>> 4eaff116b726dc2da6dca85fd317730d498a963b
   border-color: transparent;
 }
 
@@ -1833,4 +1837,8 @@ a.text-dark:hover, a.text-dark:focus {
   padding-right: 7px !important;
   padding-left: 14px !important;
   border-radius: 40px 0 0 40px;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 4eaff116b726dc2da6dca85fd317730d498a963b

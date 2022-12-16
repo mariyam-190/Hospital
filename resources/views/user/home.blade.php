@@ -1,3 +1,4 @@
+<<<<<<< HEAD
     <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -113,6 +114,9 @@
     </nav>
   </header>
 
+=======
+@include('layouts.frontend.header')
+>>>>>>> 4eaff116b726dc2da6dca85fd317730d498a963b
   @if(session()->has('message'))
   <div class="alert alert-success">
     <button type="button" class="close" data-dismiss="alert">
@@ -207,6 +211,7 @@
     </div>
   </div> <!-- .banner-home -->
 
+<<<<<<< HEAD
   <footer class="page-footer">
     <div class="container">
       <div class="row px-md-3">
@@ -273,3 +278,8 @@
 </html>
 
  
+=======
+
+  @include('layouts.frontend.footer')
+
+>>>>>>> 4eaff116b726dc2da6dca85fd317730d498a963b

@@ -45,7 +45,11 @@ label{
                 {{ session()->get('message') }}
               </div>
               @endif
+<<<<<<< HEAD
             <form action="{{ url('sendemail' , $data->id }}" method="POST">
+=======
+            <form action="{{ url('sendemail' , $data->id) }}" method="POST">
+>>>>>>> 4eaff116b726dc2da6dca85fd317730d498a963b
             @csrf
                 <div style="padding:15px;">
                     <label>Greeting</label>
@@ -76,7 +80,11 @@ label{
 
 
     <div style="padding:15px;">
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 4eaff116b726dc2da6dca85fd317730d498a963b
 
         <input type="submit"  class="btn btn-success">
     </div>

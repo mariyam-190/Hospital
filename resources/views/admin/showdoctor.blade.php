@@ -41,6 +41,7 @@
                         <th style="padding: 10px;">Update</th>
                     </tr>
                     @foreach ($data as $doctor )
+<<<<<<< HEAD
                     <tr align="center" style="background-color: #01D25C;">
                         <td>{{ $doctor->name }}</td>
                         <td>{{ $doctor->phone }}</td>
@@ -49,6 +50,16 @@
                         <td><img height="100px" width="100px" src="doctorimage/{{ $doctor->image }}"></td>
                         <td><a onclick="return confirm('are you sure?')" class="btn btn-danger" href="{{ url('deletedoctor' , $doctor->id) }}">Delete</a></td>
                         <td><a class="btn btn-primary" href="{{ url('updatedoctor',$doctor->id) }}">Update</a></td>
+=======
+                    <tr align="center" style="background-color: #00D25B;border-bottom:1px solid white;">
+                        <td style="padding: 10px; border-left:2px solid white;">{{ $doctor->name }}</td>
+                        <td style="padding: 10px; border-left:2px solid white;">{{ $doctor->phone }}</td>
+                        <td style="padding: 10px; border-left:2px solid white;">{{ $doctor->specialty }}</td>
+                        <td style="padding: 10px; border-left:2px solid white;">{{ $doctor->Room }}</td>
+                        <td style="padding: 10px; border-left:2px solid white;"><img height="50px" width="70px" src="doctorimage/{{ $doctor->image }}"></td>
+                        <td style="padding: 10px; border-left:2px solid white;"><a onclick="return confirm('are you sure?')" class="btn btn-danger" href="{{ url('deletedoctor' , $doctor->id) }}">Delete</a></td>
+                        <td style="padding: 10px; border-left:2px solid white;"><a class="btn btn-primary" href="{{ url('updatedoctor',$doctor->id) }}">Update</a></td>
+>>>>>>> 4eaff116b726dc2da6dca85fd317730d498a963b
                     </tr>
                     @endforeach
         </div>

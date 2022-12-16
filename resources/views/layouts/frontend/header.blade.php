@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +8,7 @@
 
   <meta name="copyright" content="MACode ID, https://macodeid.com/">
 
-  <title>One Health - Medical Center HTML5 Template</title>
+  <title>One Health - Medical Center</title>
 
   <link rel="stylesheet" href="../assets/css/maicons.css">
 
@@ -40,7 +39,7 @@
 
 
 
-          
+
           <div class="col-sm-4 text-right text-sm">
             <div class="social-mini-button">
               <a href="#"><span class="mai-logo-facebook-f"></span></a>
@@ -73,19 +72,19 @@
         <div class="collapse navbar-collapse" id="navbarSupport">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">About Us</a>
+              <a class="nav-link" href="/">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="doctors.html">Doctors</a>
+              <a class="nav-link" href="/">Doctors</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="blog.html">News</a>
+              <a class="nav-link" href="/">News</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link" href="/">Contact</a>
             </li>
             @if(Route::has('login'))
             @auth
@@ -95,9 +94,9 @@
 </a>
             </li>
             <x-app-layout>
-    
+
             </x-app-layout>
-           
+
             @else
             <li class="nav-item">
               <a class="btn btn-primary ml-lg-3" href="{{ route('login') }}">Login</a>
@@ -113,74 +112,3 @@
       </div> <!-- .container -->
     </nav>
   </header>
-=======
-@include('layouts.frontend.header')
->>>>>>> 4eaff116b726dc2da6dca85fd317730d498a963b
-<div align="center" style="padding:70px;">
-
-    <table>
-        <tr style="background-color:#00D9A5">
-<th style="padding:10px; font-size:20px; color:white;">Doctor Name</th>
-<th style="padding:10px; font-size:20px; color:white;">Date</th>
-<th  style="padding:10px; font-size:20px; color:white;">Message</th>
-<th  style="padding:10px; font-size:20px; color:white;">Status</th>
-<th  style="padding:10px; font-size:20px; color:white;">Cancel Appoint</th>
-        </tr>
-@foreach($appoint as $appoints)
-<<<<<<< HEAD
-        <tr style="background-color:gray;" align="center">
-            <td style="padding:10px; font-size:20px; color:white; border-left:2px solid white;">{{$appoints->doctor  }}</td>
-=======
-        <tr style="background-color:#2D3B38; border-bottom:1px solid white;" align="center">
-            <td style="padding:10px; font-size:20px; color:white; border-left:2px solid white; padding:20px;">{{$appoints->name  }}</td>
->>>>>>> 4eaff116b726dc2da6dca85fd317730d498a963b
-            <td style="padding:10px; font-size:20px; color:white; border-left:2px solid white;">{{$appoints->date  }}</td>
-            <td style="padding:10px; font-size:20px; color:white; border-left:2px solid white;">{{$appoints->message  }}</td>
-            <td style="padding:10px; font-size:20px; color:white; border-left:2px solid white;">{{$appoints->status  }}</td>
-<td><a href="{{ url('cancel_appoint' , $appoints->id) }}" class="bt btn-danger" onclick="return confirm('are you sure to delete this')" style="padding:10px; font-size:20px; color:white; border-left:2px solid white;">Cancel</a></td>
-          </tr>
-        @endforeach
-    </table>
-</div>
-<<<<<<< HEAD
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script src="../assets/js/jquery-3.5.1.min.js"></script>
-
-<script src="../assets/js/bootstrap.bundle.min.js"></script>
-
-<script src="../assets/vendor/owl-carousel/js/owl.carousel.min.js"></script>
-
-<script src="../assets/vendor/wow/wow.min.js"></script>
-
-<script src="../assets/js/theme.js"></script>
-  
-</body>
-</html>
-
- 
-=======
-@include('layouts.frontend.footer')
-
-
->>>>>>> 4eaff116b726dc2da6dca85fd317730d498a963b

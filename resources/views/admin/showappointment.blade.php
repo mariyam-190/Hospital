@@ -44,6 +44,7 @@
             <th style="padding: 10px;">Send Mail</th>
         </tr>
 @foreach ($data as $appoint )
+<<<<<<< HEAD
     
 
         <tr align="center" style="background-color: #01D25C;">
@@ -56,13 +57,30 @@
             <td>{{ $appoint->messagr  }}</td>
             <td>{{ $appoint->status  }}</td>
             <td>
+=======
+
+
+        <tr align="center" class="mt-5" style="background-color: #01D25C; border-bottom:1px solid white;">
+            <td class="mt-5">{{ $appoint->name  }}</td>
+            <td styel="border-left:2px solid white;border-left:2px solid white;">{{ $appoint->email  }}</td>
+            <td style="padding: 10px;border-left:2px solid white;">{{ $appoint->phone  }}</td>
+            <td style="padding: 10px;border-left:2px solid white;">{{ $appoint->name }}</td>
+            <td style="padding: 20px;border-left:2px solid white;">{{ $appoint->date  }}</td>
+            <td style="padding: 10px;border-left:2px solid white;">{{ $appoint->messagr  }}</td>
+            <td style="padding: 10px;border-left:2px solid white;">{{ $appoint->status  }}</td>
+            <td style="padding: 10px;border-left:2px solid white;">
+>>>>>>> 4eaff116b726dc2da6dca85fd317730d498a963b
                 <a class="btn btn-success border-white" href="{{ url('approved',$appoint->id) }}">Approved</a>
             </td>
 
             <td>
                 <a class="btn btn-danger" href="{{ url('canceled' , $appoint->id) }}">Canceled</a>
             </td>
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> 4eaff116b726dc2da6dca85fd317730d498a963b
             <td>
               <a class="btn btn-primary" href="{{ url('emailview' , $appoint->id) }}"> Mail</a>
           </td>
